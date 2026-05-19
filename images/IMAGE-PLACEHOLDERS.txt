@@ -1,0 +1,20 @@
+Big Sandy Ranchettes image file checklist
+
+Save your real image files in this /images folder using these names:
+
+- logo.png (your provided logo)
+- hero-aerial.jpg
+- story-wooded-overview.jpg
+- tract-map-placeholder.jpg
+- location-map-placeholder.jpg
+- gallery-aerial-01.jpg
+- gallery-wooded-01.jpg
+- gallery-trail-01.jpg
+- gallery-homesite-01.jpg
+- gallery-detail-01.jpg
+- gallery-wooded-02.jpg
+
+Notes:
+- Keep the same filenames to avoid editing HTML.
+- Use JPG/WebP for photos and PNG for logo/map overlays when transparency is needed.
+- Recommended hero minimum size: 1920x1200.

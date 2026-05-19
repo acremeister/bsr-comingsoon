@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Property Name] | [Subtitle]</title>
+  <meta name="description" content="[Short SEO description]" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="[Property Name] | [Location]" />
+  <meta property="og:description" content="[Open Graph description]" />
+  <meta property="og:image" content="images/hero-aerial.jpg" />
+
+  <style>
+    :root {
+      --bg: #f4efe5;
+      --surface: #fbf8f2;
+      --text: #222622;
+      --muted: #4f564f;
+      --pine: #264033;
+      --line: #d8cebe;
+      --radius: 12px;
+      --container: min(1120px, 92vw);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .container { width: var(--container); margin: 0 auto; }
+    .section { padding: 4rem 0; border-top: 1px solid rgba(0,0,0,.06); }
+    h1, h2, h3 { margin: 0 0 .8rem; }
+    p { margin: 0 0 1rem; color: var(--muted); }
+
+    .btn {
+      display: inline-block;
+      border-radius: 999px;
+      padding: .75rem 1.2rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .btn-primary { background: var(--pine); color: #fff; }
+    .btn-outline { border: 1px solid var(--line); color: var(--text); }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(251,248,242,.92);
+      border-bottom: 1px solid var(--line);
+    }
+    .header-inner {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .nav {
+      display: flex;
+      gap: .9rem;
+      flex-wrap: wrap;
+      font-size: .92rem;
+    }
+
+    .hero {
+      min-height: 72vh;
+      color: #fff;
+      display: grid;
+      align-items: end;
+      background:
+        linear-gradient(120deg, rgba(16,24,19,.86), rgba(16,24,19,.25)),
+        url("images/hero-aerial.jpg") center/cover no-repeat;
+    }
+    .hero-inner { padding: 5rem 0 2rem; }
+
+    .grid-2 {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1.1fr .9fr;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: 1rem;
+    }
+
+    .cards {
+      display: grid;
+      gap: .9rem;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+
+    .tract-list { display: grid; gap: .8rem; }
+    .tract-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: .9rem;
+    }
+
+    .gallery {
+      display: grid;
+      gap: .8rem;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+
+    .facts {
+      display: grid;
+      gap: .8rem;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: .8rem;
+    }
+
+    form { display: grid; gap: .7rem; }
+    .field-row { display: grid; gap: .7rem; grid-template-columns: repeat(2, minmax(0,1fr)); }
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: .65rem;
+      font: inherit;
+      background: #fff;
+    }
+    textarea { min-height: 120px; }
+
+    footer {
+      margin-top: 2rem;
+      padding: 2rem 0;
+      background: #1f2a24;
+      color: #f5f0e5;
+    }
+
+    @media (max-width: 900px) {
+      .grid-2, .cards, .gallery, .facts, .field-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- 1) Sticky Header / Nav -->
+  <header class="header">
+    <div class="container header-inner">
+      <strong>[Property Name]</strong>
+      <nav class="nav">
+        <a href="#overview">Overview</a>
+        <a href="#tracts">Available Tracts</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#location">Location</a>
+        <a href="#realtor">Realtor Info</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary" href="#contact">Schedule a Tour</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2) Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>[Strong, specific headline]</h1>
+        <p>[Supporting copy focused on privacy, space, buildability, and rural peace.]</p>
+        <p>
+          <a class="btn btn-primary" href="#tracts">View Available Tracts</a>
+          <a class="btn btn-outline" href="#realtor">Realtor Information</a>
+        </p>
+        <p>[Quick facts: County | Tract style | Setting | Realtor-friendly]</p>
+      </div>
+    </section>
+
+    <!-- 3) Community / Property Story -->
+    <section id="overview" class="section">
+      <div class="container grid-2">
+        <article>
+          <h2>Community / Property Story</h2>
+          <p>[Insert story copy about land character, homesite intent, and practical ownership.]</p>
+        </article>
+        <aside class="card">
+          <img src="images/story-wooded-overview.jpg" alt="[Customize alt text]" />
+        </aside>
+      </div>
+    </section>
+
+    <!-- 4) Why This Property -->
+    <section id="why" class="section">
+      <div class="container">
+        <h2>Why [Property Name]</h2>
+        <div class="cards">
+          <article class="card"><h3>[Strength 1]</h3><p>[Copy]</p></article>
+          <article class="card"><h3>[Strength 2]</h3><p>[Copy]</p></article>
+          <article class="card"><h3>[Strength 3]</h3><p>[Copy]</p></article>
+          <article class="card"><h3>[Strength 4]</h3><p>[Copy]</p></article>
+          <article class="card"><h3>[Strength 5]</h3><p>[Copy]</p></article>
+          <article class="card"><h3>[Strength 6]</h3><p>[Copy]</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5) Available Tracts -->
+    <section id="tracts" class="section">
+      <div class="container">
+        <h2>Available Tracts</h2>
+        <div class="tract-list">
+          <!-- Duplicate .tract-item as needed -->
+          <article class="tract-item">
+            <h3>[Tract name/number]</h3>
+            <p>[Insert tract acreage] | [Available/Pending/Sold]</p>
+            <p>[Short tract description]</p>
+            <a class="btn btn-outline" href="#contact">[CTA]</a>
+          </article>
+        </div>
+        <p>Pricing and availability are subject to change.</p>
+        <a class="btn btn-primary" href="#contact">Request Current Price Sheet</a>
+      </div>
+    </section>
+
+    <!-- 6) Tract Map / Land Plan -->
+    <section id="map" class="section">
+      <div class="container grid-2">
+        <div class="card">
+          <img src="images/tract-map-placeholder.jpg" alt="[Customize alt text]" />
+        </div>
+        <div>
+          <div class="card"><h3>Tract layout</h3><p>[Callout]</p></div>
+          <div class="card"><h3>Access</h3><p>[Callout]</p></div>
+          <div class="card"><h3>Usable land</h3><p>[Callout]</p></div>
+          <div class="card"><h3>Property character</h3><p>[Callout]</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7) Gallery -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <img src="images/gallery-aerial-01.jpg" alt="[Customize alt text]" />
+          <img src="images/gallery-wooded-01.jpg" alt="[Customize alt text]" />
+          <img src="images/gallery-trail-01.jpg" alt="[Customize alt text]" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 8) Land Facts / Property Details -->
+    <section id="facts" class="section">
+      <div class="container">
+        <h2>Land Facts</h2>
+        <!-- Replace with verified development facts -->
+        <div class="facts">
+          <div class="card"><strong>County</strong><p>[Value]</p></div>
+          <div class="card"><strong>State</strong><p>[Value]</p></div>
+          <div class="card"><strong>Property type</strong><p>[Value]</p></div>
+          <div class="card"><strong>Utilities</strong><p>[Insert verified utility information]</p></div>
+          <div class="card"><strong>Access</strong><p>[Insert verified access notes]</p></div>
+          <div class="card"><strong>Restrictions</strong><p>[Insert restrictions note]</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9) Location -->
+    <section id="location" class="section">
+      <div class="container grid-2">
+        <article>
+          <h2>Location</h2>
+          <p>[Practical location copy]</p>
+          <ul>
+            <li>[Nearby destination 1]</li>
+            <li>[Nearby destination 2]</li>
+            <li>[Nearby destination 3]</li>
+          </ul>
+        </article>
+        <aside class="card">
+          <img src="images/location-map-placeholder.jpg" alt="[Customize alt text]" />
+        </aside>
+      </div>
+    </section>
+
+    <!-- 10) Realtor Information -->
+    <section id="realtor" class="section">
+      <div class="container grid-2">
+        <article>
+          <h2>Realtor Information</h2>
+          <p>[Co-broker friendly message]</p>
+          <ul>
+            <li>[Buyer registration note]</li>
+            <li>[Showing instructions note]</li>
+            <li>[Agent packet note]</li>
+          </ul>
+        </article>
+        <aside class="card">
+          <p>[Insert showing contact details]</p>
+          <p>[Insert flyer/brochure links]</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 11) FAQs -->
+    <section id="faqs" class="section">
+      <div class="container">
+        <h2>FAQs</h2>
+        <details><summary>[FAQ 1]</summary><p>[Answer]</p></details>
+        <details><summary>[FAQ 2]</summary><p>[Answer]</p></details>
+        <details><summary>[FAQ 3]</summary><p>[Answer]</p></details>
+      </div>
+    </section>
+
+    <!-- 12) Contact Form -->
+    <section id="contact" class="section">
+      <div class="container grid-2">
+        <article>
+          <h2>Contact / Inquiry</h2>
+          <p>[CTA copy: availability, tours, realtor packet]</p>
+        </article>
+        <aside class="card">
+          <form action="[Insert form endpoint]" method="POST">
+            <div class="field-row">
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <div class="field-row">
+              <input type="tel" name="phone" placeholder="Phone" />
+              <select name="role" required>
+                <option value="">I am a...</option>
+                <option>Buyer</option>
+                <option>Realtor</option>
+                <option>Investor</option>
+                <option>Neighbor</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <input type="text" name="interested_tract" placeholder="Interested tract" />
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          </form>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- 13) Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>[Property Name]</strong> | [County, State]</p>
+      <p>[Contact placeholders] | [Broker / Equal Housing placeholder]</p>
+    </div>
+  </footer>
+</body>
+</html>

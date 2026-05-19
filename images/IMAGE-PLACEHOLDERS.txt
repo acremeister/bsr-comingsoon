@@ -2,7 +2,7 @@ Big Sandy Ranchettes image file checklist
 
 Save your real image files in this /images folder using these names:
 
-- logo.png (your provided logo)
+- bigsandy.png (your provided logo)
 - hero-aerial.jpg
 - story-wooded-overview.jpg
 - tract-map-placeholder.jpg

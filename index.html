@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Big Sandy Ranchettes | Private 9.5+ Acre Wooded Tracts — Polk County, Texas</title>
-  <meta name="description" content="Big Sandy Ranchettes offers private 9.5+ acre wooded tracts in Polk County, Texas. Power extended, fiber optic internet, established trails, and no floodplain. East Texas acreage for homesteads, retreats, and family land." />
+  <title>Big Sandy Ranchettes | 5.5 to 10.5 Acre Wooded Tracts — Polk County, Texas</title>
+  <meta name="description" content="Big Sandy Ranchettes is a coming soon land release in Polk County, Texas with 5.5 acres to 10.5 acres tracts. Join the interest list for updates." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Big Sandy Ranchettes | Private 9.5+ Acre Wooded Tracts" />
-  <meta property="og:description" content="Private 9.5+ acre wooded tracts in Polk County, Texas. Power, fiber, trails, no floodplain. Schedule your showing today." />
-  <meta property="og:image" content="https://images.realstack.com/w960xh720xcrop/uploads/user/3806/gallery-file/HjawTxeopdoiVFMST1iEf25Cp17Kc7W27VtU7lKw/L6PrwBBDDFkwyXXV.jpg" />
+  <meta property="og:title" content="Big Sandy Ranchettes | 5.5 to 10.5 Acre Wooded Tracts" />
+  <meta property="og:description" content="Coming soon in Polk County, Texas: 5.5 acres to 10.5 acres tracts. Join our interest list for release updates." />
+  <meta property="og:image" content="images/bigsandy.png" />
   <meta property="og:locale" content="en_US" />
-  <meta name="theme-color" content="#1b2e21" />
   <link rel="icon" type="image/png" href="images/bigsandy.png" />
   <link rel="apple-touch-icon" href="images/bigsandy.png" />
 
@@ -179,13 +178,13 @@
       flex-shrink: 0;
     }
     .brand-logo {
-      width: 62px; height: 62px;
+      width: 104px; height: 104px;
       object-fit: contain;
-      border-radius: 50%;
       border: none;
       background: transparent;
       padding: 0;
-      mix-blend-mode: multiply;
+      mix-blend-mode: normal;
+      clip-path: circle(40% at 50% 50%);
     }
     .brand-lockup { display: grid; gap: 0.08rem; }
     .brand-title {
@@ -246,7 +245,7 @@
       position: absolute;
       inset: 0;
       z-index: -2;
-      background-image: url("https://images.realstack.com/w960xh720xcrop/uploads/user/3806/gallery-file/HjawTxeopdoiVFMST1iEf25Cp17Kc7W27VtU7lKw/L6PrwBBDDFkwyXXV.jpg");
+      background-image: linear-gradient(135deg, #1b2e21 0%, #2a4436 52%, #1f3529 100%);
       background-size: cover;
       background-position: center;
       transform: scale(1.04);
@@ -270,10 +269,11 @@
       padding: 6rem 0 3.2rem;
     }
     .hero-badge {
-      width: 140px; height: 140px;
+      width: 236px; height: 236px;
       object-fit: contain;
       margin-bottom: 1.4rem;
-      mix-blend-mode: screen;
+      mix-blend-mode: normal;
+      clip-path: circle(40% at 50% 50%);
       filter: drop-shadow(0 10px 28px rgba(0,0,0,0.45));
     }
     .hero-kicker {
@@ -346,6 +346,17 @@
       box-shadow: var(--shadow);
     }
     .panel img { width: 100%; height: 360px; object-fit: cover; }
+    .coming-soon-panel {
+      height: 360px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(140deg, #2a4030, #1a2c22);
+      color: rgba(255,255,255,0.62);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
 
     /* Story copy */
     .story-copy p { color: var(--muted); margin-bottom: 1rem; line-height: 1.76; }
@@ -563,7 +574,7 @@
       justify-content: center;
     }
     .g-ph::after {
-      content: "Photo";
+      content: "Coming Soon";
       font-size: 0.68rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -754,7 +765,7 @@
     }
     .footer-grid {
       display: grid;
-      grid-template-columns: 1.4fr 0.8fr 0.8fr;
+      grid-template-columns: 1.4fr 0.8fr;
       gap: 3rem;
       align-items: start;
       padding-bottom: 2.5rem;
@@ -763,12 +774,12 @@
     }
     .footer-brand { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.8rem; }
     .footer-logo {
-      width: 58px; height: 58px;
-      border-radius: 50%;
+      width: 98px; height: 98px;
       background: transparent;
       padding: 0;
       object-fit: contain;
-      mix-blend-mode: screen;
+      mix-blend-mode: normal;
+      clip-path: circle(40% at 50% 50%);
     }
     .footer-title { font-family: "Cormorant Garamond", serif; font-size: 1.4rem; font-weight: 700; }
     .footer-line { font-size: 0.87rem; color: rgba(245,238,222,0.72); line-height: 1.7; margin-bottom: 0.35rem; }
@@ -785,39 +796,6 @@
       flex-wrap: wrap;
     }
     .footer-bottom p { font-size: 0.76rem; color: rgba(245,238,222,0.42); }
-
-    /* Lightbox */
-    .lightbox {
-      position: fixed;
-      inset: 0;
-      display: none;
-      place-items: center;
-      padding: 1rem;
-      z-index: 100;
-      background: rgba(4,9,6,0.92);
-    }
-    .lightbox img {
-      max-width: min(94vw, 1200px);
-      max-height: 90vh;
-      border-radius: var(--radius);
-      border: 1px solid rgba(196,160,88,0.28);
-    }
-    .lb-close {
-      position: absolute;
-      top: 1.2rem; right: 1.2rem;
-      width: 42px; height: 42px;
-      border: 1px solid rgba(196,160,88,0.35);
-      border-radius: 50%;
-      background: rgba(18,30,22,0.82);
-      color: var(--gold-lt);
-      font-size: 1.3rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.2s;
-    }
-    .lb-close:hover { background: rgba(196,160,88,0.18); }
 
     /* Reveal */
     .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.62s ease, transform 0.62s ease; }
@@ -844,8 +822,8 @@
     @media (max-width: 1080px) {
       .feature-grid { grid-template-columns: repeat(2, 1fr); }
       .facts-grid   { grid-template-columns: repeat(2, 1fr); }
-      .footer-grid  { grid-template-columns: 1fr 1fr; }
-      .footer-grid > :first-child { grid-column: span 2; }
+      .footer-grid  { grid-template-columns: 1fr; }
+      .footer-grid > :first-child { grid-column: span 1; }
     }
 
     @media (max-width: 860px) {
@@ -879,7 +857,7 @@
 
   <!-- Announcement bar -->
   <div class="announce-bar" role="banner">
-    Now Releasing &mdash;<strong>Big Sandy Ranchettes</strong>&mdash; Private 9.5+ Acre Wooded Tracts &bull; Polk County, Texas &bull; Power &amp; Fiber Ready
+    Lots Not Released Yet &mdash;<strong>Big Sandy Ranchettes</strong>&mdash; Tracts 1-8: 5.5 Acres &bull; Tract 9: 10.5 Acres &bull; Join The Interest List
   </div>
 
   <!-- Sticky header -->
@@ -897,13 +875,12 @@
 
       <nav class="top-nav" id="topNav" aria-label="Primary navigation">
         <a href="#overview">Overview</a>
-        <a href="#tracts">Available Tracts</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#tracts">Tract Facts</a>
         <a href="#location">Location</a>
         <a href="#realtor">Realtor Info</a>
         <a href="#faqs">FAQs</a>
         <a href="#contact">Contact</a>
-        <a class="btn btn-primary" href="#contact">Schedule a Tour</a>
+        <a class="btn btn-primary" href="#contact">Join Interest List</a>
       </nav>
     </div>
   </header>
@@ -917,32 +894,35 @@
       <div class="hero-fade-bottom" aria-hidden="true"></div>
 
       <div class="hero-inner">
-        <img class="hero-badge" src="images/bigsandy.png" alt="Big Sandy Ranchettes emblem" />
+        <img class="hero-badge" src="images/bigsandy.png" alt="Big Sandy Ranchettes emblem" loading="eager" />
 
         <div class="hero-kicker">
           <span class="kicker">Polk County, Texas</span>
         </div>
 
-        <h1 id="hero-heading">Private East Texas Acreage — On Your Terms</h1>
+        <h1 id="hero-heading">Big Sandy Ranchettes Coming Soon</h1>
 
         <p class="hero-desc">
-          Big Sandy Ranchettes offers wooded 9.5+ acre tracts ready for homesteads, family retreats, and forever land. Power already extended. Fiber optic internet on every lot. Established trails throughout. Zero floodplain concerns.
+          5.5 Acres to 10.5 Acres tracts in Polk County, Texas. This is a coming soon release, and the interest list is now open for buyers and agents who want early updates.
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-gold" href="#tracts">View Available Tracts</a>
+          <a class="btn btn-gold" href="#contact">Join Interest List</a>
           <a class="btn btn-outline-lt" href="#realtor">Realtor Information</a>
         </div>
 
         <div class="hero-stats" role="list" aria-label="Property highlights">
           <div class="hero-stat" role="listitem">
-            <strong>9.5+ Acres</strong>Per Tract
+            <strong>5.5 Acres</strong>Tracts 1-8
+          </div>
+          <div class="hero-stat" role="listitem">
+            <strong>10.5 Acres</strong>Tract 9
           </div>
           <div class="hero-stat" role="listitem">
             <strong>Power Ready</strong>Sam Houston Electric
           </div>
           <div class="hero-stat" role="listitem">
-            <strong>Fiber Optic</strong>Internet on Every Lot
+            <strong>Fiber Optic</strong>Along Benny Griffin Road
           </div>
           <div class="hero-stat" role="listitem">
             <strong>No Floodplain</strong>Polk County, TX
@@ -954,6 +934,48 @@
       </div>
     </section>
 
+    <!-- CONTACT -->
+    <section class="section reveal" id="contact">
+      <div class="container contact-grid">
+        <article>
+          <span class="kicker">Interest List</span>
+          <h2>Join our interest list before lots are released</h2>
+          <div class="divider"><span></span></div>
+          <p class="prose-contact">
+            Lots are coming soon. Join the interest list below so we can notify you when release timing, pricing, and tract selection details are announced.
+          </p>
+          <ul class="realtor-list">
+            <li>Join the buyer and agent interest list</li>
+            <li>Receive release timing and pricing updates</li>
+            <li>Get listing team follow-up when lots go live</li>
+          </ul>
+          <div class="contact-callout">
+            <p class="callout-primary"><strong>Walker Powell</strong> &bull; (936) 661-9442</p>
+            <p class="callout-primary"><strong>Phil Letbetter</strong> &bull; (936) 661-4729</p>
+            <p class="callout-secondary">Homeland Properties &bull; Interest list support</p>
+          </div>
+        </article>
+
+        <aside class="contact-aside">
+          <p class="callout-primary"><strong>HubSpot Interest Form</strong></p>
+          <p class="callout-secondary">The official Big Sandy Ranchettes interest list is open.</p>
+          <div id="hubspot-interest-form"></div>
+          <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            if (window.hbspt) {
+              window.hbspt.forms.create({
+                region: "na1",
+                portalId: "YOUR_PORTAL_ID",
+                formId: "YOUR_FORM_ID",
+                target: "#hubspot-interest-form"
+              });
+            }
+          </script>
+          <p class="form-note">This form is for coming soon lot interest list signups.</p>
+        </aside>
+      </div>
+    </section>
+
     <!-- OVERVIEW -->
     <section class="section reveal" id="overview">
       <div class="container two-col">
@@ -962,26 +984,16 @@
           <h2>Wooded, well-prepared acreage in the heart of East Texas</h2>
           <div class="divider"><span></span></div>
           <p>
-            Welcome to Big Sandy Ranchettes — a carefully curated offering of private, wooded acreage tracts in Polk County, Texas. Each tract is 9.5 acres or more of mature East Texas timber, giving you the canopy, the privacy, and the quiet this part of the state is known for.
+            Welcome to Big Sandy Ranchettes — a carefully curated offering of private, wooded acreage tracts in Polk County, Texas. Tracts 1 through 8 are each 5.5 acres, and Tract 9 is 10.5 acres, giving buyers both efficient and expanded acreage options in one community.
           </p>
           <p>
-            We've done the preparation work so you can focus on your vision. Trails have been thoughtfully cut and selective forestry mulching completed to showcase the natural beauty of the land without stripping what makes it special. Power is already extended to the property, and fiber optic internet runs to every lot — a rare infrastructure advantage in a rural setting this private.
+            We've done the preparation work so you can focus on your vision. Trails have been thoughtfully cut and selective forestry mulching completed to showcase the natural beauty of the land without stripping what makes it special. Power is already extended to the property, and fiber optic service is available along Benny Griffin Road — a rare infrastructure advantage in a rural setting this private.
           </p>
           <p>
             Situated just across from our sister development Trails at Benny Griffin, Big Sandy Ranchettes shares the same gravel county road access, sandy loam soils, and peaceful Polk County setting — minutes from the Alabama-Coushatta Indian Reservation in southeastern Polk County.
           </p>
-          <a class="btn btn-primary" href="#tracts">See Available Tracts</a>
+          <a class="btn btn-primary" href="#contact">Join Interest List</a>
         </article>
-
-        <aside>
-          <div class="panel">
-            <img
-              src="https://images.realstack.com/w960xh720xcrop/uploads/user/3806/gallery-file/xncBrhGTkLHdKW8Rj9qm3XkWZvPIRxDOs0daEH9O/fXmvH56XOuEHoERO.jpg"
-              alt="Mature wooded East Texas landscape at Big Sandy Ranchettes"
-              loading="lazy"
-            />
-          </div>
-        </aside>
       </div>
     </section>
 
@@ -1000,8 +1012,8 @@
           </article>
           <article class="feature-card">
             <span class="feature-icon">📡</span>
-            <h3>Fiber Optic on Every Lot</h3>
-            <p>High-speed fiber internet available on every tract — a rare advantage that makes remote living and working genuinely practical.</p>
+            <h3>Fiber Along Benny Griffin Road</h3>
+            <p>High-speed fiber access is available along Benny Griffin Road, adding strong connectivity potential in this rural location.</p>
           </article>
           <article class="feature-card">
             <span class="feature-icon">🌲</span>
@@ -1030,109 +1042,17 @@
     <!-- TRACTS -->
     <section class="section reveal" id="tracts">
       <div class="container">
-        <span class="kicker">Available Tracts</span>
-        <h2>Current inventory — updated as status changes</h2>
-        <p class="lead">Each tract is 9.5+ acres of private, wooded East Texas acreage. Contact us for current pricing, showing access, and reservation details.</p>
+        <span class="kicker">Tract Facts</span>
+        <h2>Coming Soon Lots - join our interest list</h2>
+        <p class="lead">Reservations are not open yet. Join the interest list now to be first in line for release updates and tract details.</p>
 
-        <div class="tract-grid">
+        <dl class="facts-grid" aria-label="Tract size facts">
+          <div class="fact"><dt>Tracts 1-8</dt><dd>5.5 acres each</dd></div>
+          <div class="fact"><dt>Tract 9</dt><dd>10.5 acres</dd></div>
+          <div class="fact"><dt>Current Status</dt><dd>Interest list only - lots not released yet</dd></div>
+        </dl>
 
-          <article class="tract-card">
-            <div class="tract-img">
-              <img src="https://images.realstack.com/w960xh720xcrop/uploads/user/3806/gallery-file/HjawTxeopdoiVFMST1iEf25Cp17Kc7W27VtU7lKw/L6PrwBBDDFkwyXXV.jpg" alt="Tract 1 aerial view" loading="lazy" />
-            </div>
-            <div class="tract-body">
-              <div class="tract-header">
-                <div>
-                  <div class="tract-name">Tract 1</div>
-                  <div class="tract-acres">9.5+ Acres</div>
-                </div>
-                <span class="status available">Available</span>
-              </div>
-              <p class="tract-desc">Deep-wooded interior tract with excellent privacy depth, established trail access, and flexible homesite placement throughout.</p>
-              <a class="btn btn-primary" href="#contact">Request Details</a>
-            </div>
-          </article>
-
-          <article class="tract-card">
-            <div class="tract-img">
-              <img src="https://images.realstack.com/w960xh720xcrop/uploads/user/3806/gallery-file/xncBrhGTkLHdKW8Rj9qm3XkWZvPIRxDOs0daEH9O/fXmvH56XOuEHoERO.jpg" alt="Tract 2 wooded East Texas land" loading="lazy" />
-            </div>
-            <div class="tract-body">
-              <div class="tract-header">
-                <div>
-                  <div class="tract-name">Tract 2</div>
-                  <div class="tract-acres">9.5+ Acres</div>
-                </div>
-                <span class="status available">Available</span>
-              </div>
-              <p class="tract-desc">Mixed hardwood and pine canopy with multiple viable homesite locations. Well-suited for a weekend retreat or primary homestead plan.</p>
-              <a class="btn btn-primary" href="#contact">Request Details</a>
-            </div>
-          </article>
-
-          <article class="tract-card">
-            <div class="tract-img-placeholder"><span>Add Tract Photo</span></div>
-            <div class="tract-body">
-              <div class="tract-header">
-                <div>
-                  <div class="tract-name">Tract 3</div>
-                  <div class="tract-acres">9.5+ Acres</div>
-                </div>
-                <span class="status pending">Pending</span>
-              </div>
-              <p class="tract-desc">Quiet interior tract bordered by mature timber on all sides. Strong trail connectivity and natural screen make this one of the most secluded parcels.</p>
-              <a class="btn btn-outline" href="#contact">Join Backup List</a>
-            </div>
-          </article>
-
-          <article class="tract-card">
-            <div class="tract-img-placeholder"><span>Add Tract Photo</span></div>
-            <div class="tract-body">
-              <div class="tract-header">
-                <div>
-                  <div class="tract-name">Tract 4</div>
-                  <div class="tract-acres">9.5+ Acres</div>
-                </div>
-                <span class="status available">Available</span>
-              </div>
-              <p class="tract-desc">Sandy loam soils, excellent timber canopy, and direct trail access from the county road. Ideal for homestead or recreational ownership.</p>
-              <a class="btn btn-primary" href="#contact">Request Details</a>
-            </div>
-          </article>
-
-          <article class="tract-card">
-            <div class="tract-img-placeholder"><span>Add Tract Photo</span></div>
-            <div class="tract-body">
-              <div class="tract-header">
-                <div>
-                  <div class="tract-name">Tract 5</div>
-                  <div class="tract-acres">9.5+ Acres</div>
-                </div>
-                <span class="status available">Available</span>
-              </div>
-              <p class="tract-desc">Active whitetail and hog movement throughout. Strong privacy depth with the interior trail network already cut and accessible.</p>
-              <a class="btn btn-primary" href="#contact">Request Details</a>
-            </div>
-          </article>
-
-          <article class="tract-card">
-            <div class="tract-img-placeholder"><span>Add Tract Photo</span></div>
-            <div class="tract-body">
-              <div class="tract-header">
-                <div>
-                  <div class="tract-name">Tract 6</div>
-                  <div class="tract-acres">9.5+ Acres</div>
-                </div>
-                <span class="status sold">Sold</span>
-              </div>
-              <p class="tract-desc">Previously closed — shown for project transparency and pace. Contact us for details on remaining available parcels with similar character.</p>
-              <a class="btn btn-outline" href="#contact">Ask About Similar</a>
-            </div>
-          </article>
-
-        </div>
-
-        <p class="sect-note">Pricing, acreage, and availability are subject to change without notice. Independently verify all details before purchase.</p>
+        <p class="sect-note">Big Sandy Ranchettes is in pre-release. Join the interest list to receive first notice on pricing, timing, and next steps.</p>
         <a class="btn btn-gold btn-mt" href="#contact">Request Current Price Sheet</a>
       </div>
     </section>
@@ -1148,65 +1068,6 @@
       </div>
     </section>
 
-    <!-- MAP -->
-    <section class="section reveal" id="map">
-      <div class="container">
-        <span class="kicker">Tract Map &amp; Land Plan</span>
-        <h2>Understand the layout before you walk the ground</h2>
-
-        <div class="map-grid">
-          <div class="map-placeholder">
-            <!-- Replace with your plat image: <img src="images/tract-map.jpg" alt="Big Sandy Ranchettes plat map" /> -->
-            <span>Tract Map — Add Plat Image</span>
-          </div>
-          <div class="callout-stack">
-            <article class="callout">
-              <h4>Tract Boundaries</h4>
-              <p>Compare individual tract shapes, depth, and road frontage to identify your preferred homesite orientation and privacy setbacks.</p>
-            </article>
-            <article class="callout">
-              <h4>Trail &amp; Access Routes</h4>
-              <p>Review the established trail system, county road entry points, and showing approach before your first visit.</p>
-            </article>
-            <article class="callout">
-              <h4>Usable Ground</h4>
-              <p>Use the plat alongside gallery photos to evaluate timber density, clearing potential, and total buildable land per tract.</p>
-            </article>
-            <article class="callout">
-              <h4>Wildlife Corridors</h4>
-              <p>Natural topography and mature timber support active whitetail, hog, dove, and small game movement throughout the property.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section class="section reveal" id="gallery">
-      <div class="container">
-        <span class="kicker">Gallery</span>
-        <h2>See the land before you visit</h2>
-        <p class="lead">Aerial views, trail cuts, wooded interiors, and homesite openings — real imagery from the property and its sister development across the road.</p>
-
-        <div class="gallery-grid" aria-label="Big Sandy Ranchettes photo gallery">
-          <figure class="gallery-item g-xl">
-            <img src="https://images.realstack.com/w960xh720xcrop/uploads/user/3806/gallery-file/HjawTxeopdoiVFMST1iEf25Cp17Kc7W27VtU7lKw/L6PrwBBDDFkwyXXV.jpg" alt="Aerial view of Big Sandy Ranchettes wooded acreage" loading="lazy" />
-            <figcaption>Aerial Views</figcaption>
-          </figure>
-          <figure class="gallery-item g-tall">
-            <img src="https://images.realstack.com/w960xh720xcrop/uploads/user/3806/gallery-file/xncBrhGTkLHdKW8Rj9qm3XkWZvPIRxDOs0daEH9O/fXmvH56XOuEHoERO.jpg" alt="Mature East Texas timber canopy" loading="lazy" />
-            <figcaption>Wooded Terrain</figcaption>
-          </figure>
-          <!-- Add more photos to images/ folder and replace these placeholders -->
-          <figure class="gallery-item g-sm g-ph"><figcaption>Trail Access</figcaption></figure>
-          <figure class="gallery-item g-sm g-ph"><figcaption>Homesite Opening</figcaption></figure>
-          <figure class="gallery-item g-sm g-ph"><figcaption>Timber Character</figcaption></figure>
-          <figure class="gallery-item g-sm g-ph"><figcaption>Sandy Loam Soils</figcaption></figure>
-        </div>
-        <p class="gallery-note">Additional photography available upon request. Contact us to schedule an in-person showing.</p>
-      </div>
-    </section>
-
     <!-- LAND FACTS -->
     <section class="section reveal" id="details">
       <div class="container">
@@ -1218,9 +1079,9 @@
           <div class="fact"><dt>County</dt><dd>Polk County</dd></div>
           <div class="fact"><dt>State</dt><dd>Texas</dd></div>
           <div class="fact"><dt>Property Type</dt><dd>Acreage Ranchette Tracts</dd></div>
-          <div class="fact"><dt>Tract Size</dt><dd>9.5+ Acres per Tract</dd></div>
+          <div class="fact"><dt>Tract Size</dt><dd>Tracts 1-8: 5.5 acres each | Tract 9: 10.5 acres</dd></div>
           <div class="fact"><dt>Electric</dt><dd>Sam Houston Electric Cooperative — extended to property</dd></div>
-          <div class="fact"><dt>Internet</dt><dd>Fiber optic available on every lot</dd></div>
+          <div class="fact"><dt>Internet</dt><dd>Fiber optics along Benny Griffin Road</dd></div>
           <div class="fact"><dt>Water / Sewer</dt><dd>Well &amp; septic required — buyer to verify local providers</dd></div>
           <div class="fact"><dt>Road Type</dt><dd>Gravel county road</dd></div>
           <div class="fact"><dt>Soil Type</dt><dd>Sandy loam</dd></div>
@@ -1228,8 +1089,8 @@
           <div class="fact"><dt>School District</dt><dd>Big Sandy ISD</dd></div>
           <div class="fact"><dt>Wildlife</dt><dd>Whitetail deer, feral hog, dove, small game</dd></div>
           <div class="fact"><dt>Possible Uses</dt><dd>Residential, homestead, hunting, recreational, manufactured home, investment</dd></div>
-          <div class="fact"><dt>Restrictions</dt><dd>[Insert deed restriction details]</dd></div>
-          <div class="fact"><dt>Survey / Plat</dt><dd>[Insert survey and plat availability]</dd></div>
+          <div class="fact"><dt>Restrictions</dt><dd>Light Deed Restriction</dd></div>
+          <div class="fact"><dt>Survey / Plat</dt><dd>Survey available</dd></div>
         </dl>
       </div>
     </section>
@@ -1295,10 +1156,17 @@
             <div class="agent-name">Walker Powell</div>
             <div class="agent-title">Multi-State Broker &bull; ALC</div>
             <p class="agent-row"><strong>Phone:</strong> (936) 661-9442</p>
-            <p class="agent-row"><strong>Co-Representative:</strong> Phil Letbetter</p>
+            <p class="agent-row"><strong>Licensed:</strong> TX, OK, LA</p>
+            <p class="agent-row"><strong>Office:</strong> 1600 Normal Park Dr, Huntsville, TX 77340</p>
             <p class="agent-row"><strong>Brokerage:</strong> Homeland Properties</p>
-            <p class="agent-row agent-row-mt"><strong>Showings:</strong> By appointment — contact listing team to schedule.</p>
-            <p class="agent-row"><strong>Agent Packet:</strong> Available for all active co-broker participants.</p>
+            <p class="agent-row agent-row-mt"><strong>Role:</strong> Buyer and agent inquiries for Big Sandy Ranchettes.</p>
+            <p class="agent-row"><strong>Interest List:</strong> Available now for lots not yet released.</p>
+            <hr />
+            <div class="agent-name">Phil Letbetter</div>
+            <div class="agent-title">Licensed in TX &bull; Homeland Properties</div>
+            <p class="agent-row"><strong>Phone:</strong> (936) 661-4729</p>
+            <p class="agent-row"><strong>Office:</strong> 1600 Normal Park Dr, Huntsville, TX 77340</p>
+            <p class="agent-row"><strong>Profile:</strong> <a href="https://homelandprop.com/phil-letbetter/" target="_blank" rel="noopener">homelandprop.com/phil-letbetter</a></p>
             <p class="agent-legal">Final cooperation terms should be confirmed with the listing broker prior to showing.</p>
           </div>
         </aside>
@@ -1314,11 +1182,11 @@
         <div class="faq-list">
           <details>
             <summary>Are tracts available now?</summary>
-            <p>Yes — several tracts are currently available. Inventory moves as reservations and closings occur. Contact us for a real-time status update and current pricing on each available parcel.</p>
+            <p>No. Lots are not released yet. We are collecting buyer and agent information through our interest list and will share updates when release details are announced.</p>
           </details>
           <details>
             <summary>How large are the tracts?</summary>
-            <p>Each tract at Big Sandy Ranchettes is 9.5 acres or larger. Exact acreage varies slightly by tract. Contact us for current survey data on each available parcel.</p>
+            <p>Tracts 1 through 8 are 5.5 acres each, and Tract 9 is 10.5 acres.</p>
           </details>
           <details>
             <summary>Is power available on the property?</summary>
@@ -1356,63 +1224,6 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section reveal" id="contact">
-      <div class="container contact-grid">
-        <article>
-          <span class="kicker">Contact Us</span>
-          <h2>Request availability, pricing &amp; showing details</h2>
-          <div class="divider"><span></span></div>
-          <p class="prose-contact">
-            Use this form to request current tract availability, schedule a property tour, or receive realtor packet information. We respond promptly to all serious inquiries.
-          </p>
-          <ul class="realtor-list">
-            <li>Request current availability and pricing</li>
-            <li>Schedule a private property tour</li>
-            <li>Get the realtor co-broker packet</li>
-          </ul>
-          <div class="contact-callout">
-            <p class="callout-primary"><strong>Walker Powell</strong> &bull; (936) 661-9442</p>
-            <p class="callout-secondary">Multi-State Broker | ALC &bull; Homeland Properties</p>
-          </div>
-        </article>
-
-        <aside class="contact-aside">
-          <!-- Set action to your Formspree or preferred endpoint before publishing -->
-          <form action="[Insert form endpoint]" method="POST">
-            <div class="field-row">
-              <label>Name<input type="text" name="name" placeholder="Your full name" required /></label>
-              <label>Email<input type="email" name="email" placeholder="you@example.com" required /></label>
-            </div>
-            <div class="field-row">
-              <label>Phone<input type="tel" name="phone" placeholder="(000) 000-0000" /></label>
-              <label>
-                I am a
-                <select name="role" required>
-                  <option value="">Select one</option>
-                  <option>Buyer</option>
-                  <option>Realtor / Agent</option>
-                  <option>Investor</option>
-                  <option>Neighbor</option>
-                  <option>Other</option>
-                </select>
-              </label>
-            </div>
-            <div class="field-row">
-              <label>Tract of Interest<input type="text" name="interested_tract" placeholder='Tract # or "All Available"' /></label>
-              <label>Purchase Timeline<input type="text" name="timeline" placeholder="e.g. 30–90 days" /></label>
-            </div>
-            <label>
-              Message
-              <textarea name="message" placeholder="Tell us what you're looking for — homestead, hunting land, investment, or all of the above."></textarea>
-            </label>
-            <button class="btn btn-gold btn-full" type="submit">Send Inquiry</button>
-            <p class="form-note">By submitting you agree to be contacted regarding Big Sandy Ranchettes. We respect your privacy.</p>
-          </form>
-        </aside>
-      </div>
-    </section>
-
   </main>
 
   <!-- FOOTER -->
@@ -1421,11 +1232,11 @@
       <div class="footer-grid">
         <section>
           <div class="footer-brand">
-            <img class="footer-logo" src="images/bigsandy.png" alt="Big Sandy Ranchettes" loading="lazy" />
+            <img class="footer-logo" src="images/bigsandy.png" alt="Big Sandy Ranchettes emblem" loading="lazy" />
             <span class="footer-title">Big Sandy Ranchettes</span>
           </div>
-          <p class="footer-line">Private 9.5+ Acre Wooded Tracts &bull; Polk County, Texas</p>
-          <p class="footer-line">Walker Powell &bull; (936) 661-9442</p>
+          <p class="footer-line">Tracts 1-8: 5.5 Acres Each &bull; Tract 9: 10.5 Acres</p>
+          <p class="footer-line">Walker Powell &bull; (936) 661-9442 &bull; Phil Letbetter &bull; (936) 661-4729</p>
           <p class="footer-line">Homeland Properties &bull; Multi-State Broker | ALC</p>
           <p class="footer-disclaimer">
             Information is deemed reliable but not guaranteed. Pricing, acreage, utility details, restrictions, and availability are subject to change without notice. Buyers and agents should independently verify all property-specific information before purchase.
@@ -1436,20 +1247,12 @@
           <p class="footer-nav-head">Explore</p>
           <nav class="footer-links" aria-label="Footer navigation">
             <a href="#overview">Overview</a>
-            <a href="#tracts">Available Tracts</a>
-            <a href="#gallery">Gallery</a>
+            <a href="#tracts">Tract Facts</a>
             <a href="#location">Location</a>
             <a href="#realtor">Realtor Info</a>
             <a href="#faqs">FAQs</a>
             <a href="#contact">Contact</a>
           </nav>
-        </section>
-
-        <section>
-          <p class="footer-nav-head">Broker / Legal</p>
-          <p class="footer-line">[Insert brokerage license details]</p>
-          <p class="footer-line footer-line-mt">Equal Housing Opportunity</p>
-          <p class="footer-line footer-line-mt2">[Insert Equal Housing statement]</p>
         </section>
       </div>
 
@@ -1460,41 +1263,12 @@
     </div>
   </footer>
 
-  <!-- LIGHTBOX -->
-  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
-    <button class="lb-close" id="lbClose" type="button" aria-label="Close image">&#215;</button>
-    <img id="lbImage" src="" alt="Expanded property image" />
-  </div>
-
   <script>
     // Nav toggle
     const navToggle = document.getElementById("navToggle");
     const topNav    = document.getElementById("topNav");
     navToggle.addEventListener("click", () => topNav.classList.toggle("open"));
     document.querySelectorAll(".top-nav a").forEach(a => a.addEventListener("click", () => topNav.classList.remove("open")));
-
-    // Lightbox
-    const lightbox = document.getElementById("lightbox");
-    const lbImage  = document.getElementById("lbImage");
-    const lbClose  = document.getElementById("lbClose");
-
-    document.querySelectorAll(".gallery-item img").forEach(img => {
-      img.addEventListener("click", () => {
-        lbImage.src = img.src;
-        lbImage.alt = img.alt;
-        lightbox.style.display = "grid";
-        lightbox.setAttribute("aria-hidden", "false");
-      });
-    });
-
-    function closeLb() {
-      lightbox.style.display = "none";
-      lightbox.setAttribute("aria-hidden", "true");
-      lbImage.src = "";
-    }
-    lbClose.addEventListener("click", closeLb);
-    lightbox.addEventListener("click", e => { if (e.target === lightbox) closeLb(); });
-    document.addEventListener("keydown", e => { if (e.key === "Escape") closeLb(); });
 
     // Scroll reveal
     const observer = new IntersectionObserver(

@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Big Sandy Ranchettes | Private Acreage Homesites in Polk County, Texas</title>
+  <meta
+    name="description"
+    content="Explore Big Sandy Ranchettes in Polk County, Texas: private wooded acreage tracts, tract map details, local-realtor-friendly process, and direct buyer inquiries."
+  />
+  <meta property="og:title" content="Big Sandy Ranchettes | Polk County, Texas" />
+  <meta
+    property="og:description"
+    content="Private wooded acreage homesites in Polk County, Texas. View available tracts, gallery, map details, and realtor information."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/hero-aerial.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="theme-color" content="#1f2b24" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #f4f0e7;
+      --surface: #fbf9f4;
+      --surface-strong: #efe8db;
+      --text: #1f1e1b;
+      --text-soft: #4a4a43;
+      --pine: #244232;
+      --pine-strong: #1a2f24;
+      --sand: #cbb89b;
+      --brown: #715845;
+      --line: #d8cebf;
+      --ok: #2e6b4b;
+      --warn: #8a6d2f;
+      --sold: #6b2f2f;
+      --radius: 14px;
+      --radius-sm: 10px;
+      --shadow: 0 12px 35px rgba(18, 23, 20, 0.1);
+      --container: min(1180px, 92vw);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", "Segoe UI", sans-serif;
+      background: radial-gradient(circle at 85% 3%, #e8dfd2 0%, transparent 28%), var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      border-radius: var(--radius-sm);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: var(--container);
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 4.8rem 0;
+      border-top: 1px solid rgba(40, 48, 41, 0.05);
+    }
+
+    .section h2 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      margin: 0 0 1rem;
+      letter-spacing: 0.01em;
+      line-height: 1.1;
+    }
+
+    .kicker {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-weight: 700;
+      color: var(--brown);
+      margin-bottom: 0.8rem;
+      display: inline-block;
+    }
+
+    .lead {
+      color: var(--text-soft);
+      max-width: 62ch;
+      margin-top: 0.2rem;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 999px;
+      padding: 0.82rem 1.35rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.01em;
+      transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--pine);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--pine-strong);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.8);
+      color: var(--text);
+    }
+
+    .btn-outline:hover {
+      background: var(--surface);
+      border-color: #c8bba7;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(229, 220, 204, 0.65);
+      backdrop-filter: blur(12px);
+      background: rgba(251, 248, 241, 0.86);
+    }
+
+    .site-header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 74px;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .brand-title {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 700;
+      font-size: 1.45rem;
+      line-height: 1;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-sub {
+      font-size: 0.78rem;
+      color: var(--text-soft);
+      letter-spacing: 0.03em;
+    }
+
+    .nav-toggle {
+      display: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 8px;
+      padding: 0.36rem 0.55rem;
+      font-size: 1.1rem;
+      color: var(--pine);
+    }
+
+    .top-nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.93rem;
+      color: var(--text-soft);
+    }
+
+    .top-nav a {
+      padding: 0.3rem 0.2rem;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .top-nav a:hover {
+      color: var(--pine);
+      border-color: rgba(38, 66, 50, 0.35);
+    }
+
+    .hero {
+      min-height: 88vh;
+      position: relative;
+      display: grid;
+      align-items: end;
+      color: #fff;
+      isolation: isolate;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(105deg, rgba(19, 29, 24, 0.86) 12%, rgba(19, 29, 24, 0.53) 48%, rgba(19, 29, 24, 0.2) 100%),
+        url("images/hero-aerial.jpg") center/cover no-repeat;
+      z-index: -2;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 21, 17, 0.55), rgba(14, 21, 17, 0.05));
+      z-index: -1;
+    }
+
+    .hero-inner {
+      width: var(--container);
+      margin: 0 auto;
+      padding: 6rem 0 2.3rem;
+    }
+
+    .hero h1 {
+      margin: 0;
+      max-width: 18ch;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(2.4rem, 7.8vw, 4.5rem);
+      line-height: 0.98;
+      letter-spacing: 0.01em;
+    }
+
+    .hero p {
+      margin: 1.2rem 0 0;
+      max-width: 54ch;
+      color: rgba(248, 244, 236, 0.95);
+      font-size: 1.08rem;
+    }
+
+    .hero-actions {
+      margin-top: 1.6rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .quick-facts {
+      margin-top: 2.2rem;
+      display: grid;
+      gap: 0.6rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      max-width: 700px;
+    }
+
+    .quick-facts span {
+      background: rgba(15, 20, 17, 0.45);
+      border: 1px solid rgba(243, 238, 225, 0.22);
+      padding: 0.55rem 0.78rem;
+      border-radius: 999px;
+      font-size: 0.86rem;
+      width: fit-content;
+    }
+
+    .story-grid,
+    .location-grid,
+    .agent-grid,
+    .contact-grid {
+      display: grid;
+      gap: 1.4rem;
+      align-items: start;
+      grid-template-columns: 1.1fr 0.9fr;
+    }
+
+    .story-image-wrap,
+    .location-map,
+    .agent-panel,
+    .form-panel,
+    .map-panel {
+      background: var(--surface);
+      border: 1px solid rgba(182, 163, 138, 0.3);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 0.9rem;
+    }
+
+    .story-copy p,
+    .location-copy p,
+    .agent-copy p {
+      margin: 0 0 1rem;
+      color: var(--text-soft);
+    }
+
+    .strength-grid {
+      margin-top: 1.3rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .strength-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.15rem;
+      min-height: 180px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.28s ease, border-color 0.28s ease;
+    }
+
+    .strength-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #917b63, #335741);
+      opacity: 0.55;
+    }
+
+    .strength-card:hover {
+      transform: translateY(-4px);
+      border-color: #baa485;
+    }
+
+    .strength-card h3 {
+      margin: 0 0 0.5rem;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.5rem;
+      line-height: 1.1;
+    }
+
+    .strength-card p {
+      margin: 0;
+      color: var(--text-soft);
+      font-size: 0.97rem;
+    }
+
+    .tracts-note {
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+      color: var(--text-soft);
+    }
+
+    .tract-list {
+      margin-top: 1.15rem;
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .tract-item {
+      display: grid;
+      grid-template-columns: 1.05fr 0.5fr 0.5fr 1.6fr auto;
+      align-items: center;
+      gap: 0.9rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 0.95rem;
+    }
+
+    .tract-item h3 {
+      margin: 0;
+      font-size: 1.08rem;
+      letter-spacing: 0.01em;
+    }
+
+    .tract-meta {
+      font-weight: 600;
+      color: #3f403b;
+      font-size: 0.93rem;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 0.3rem 0.55rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 700;
+      width: fit-content;
+      border: 1px solid transparent;
+    }
+
+    .status.available {
+      color: var(--ok);
+      background: #e9f4ed;
+      border-color: #bfd9c8;
+    }
+
+    .status.pending {
+      color: var(--warn);
+      background: #fcf4df;
+      border-color: #efdbab;
+    }
+
+    .status.sold {
+      color: var(--sold);
+      background: #fae8e8;
+      border-color: #e7bbbb;
+    }
+
+    .map-layout {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: start;
+    }
+
+    .map-callouts {
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .callout {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 0.9rem;
+      background: var(--surface);
+    }
+
+    .callout h3 {
+      margin: 0 0 0.3rem;
+      font-size: 1rem;
+      color: var(--pine-strong);
+    }
+
+    .callout p {
+      margin: 0;
+      color: var(--text-soft);
+      font-size: 0.94rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      gap: 0.85rem;
+      margin-top: 1rem;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 130px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      border: 1px solid rgba(154, 136, 112, 0.35);
+      background: #ece6da;
+    }
+
+    .gallery-item img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-item figcaption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(16, 21, 17, 0.82), rgba(16, 21, 17, 0));
+      color: #f2eee7;
+      font-size: 0.8rem;
+      padding: 1.8rem 0.65rem 0.55rem;
+      letter-spacing: 0.03em;
+    }
+
+    .gallery-large {
+      grid-column: span 8;
+      grid-row: span 2;
+    }
+
+    .gallery-tall {
+      grid-column: span 4;
+      grid-row: span 2;
+    }
+
+    .gallery-small {
+      grid-column: span 4;
+    }
+
+    .facts-grid {
+      margin-top: 1.25rem;
+      display: grid;
+      gap: 0.85rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .fact {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 0.95rem;
+      background: var(--surface);
+    }
+
+    .fact dt {
+      font-size: 0.77rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--brown);
+      margin-bottom: 0.4rem;
+      font-weight: 700;
+    }
+
+    .fact dd {
+      margin: 0;
+      color: #363730;
+      font-size: 0.95rem;
+    }
+
+    .nearby-list,
+    .agent-list,
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0;
+      display: grid;
+      gap: 0.55rem;
+    }
+
+    .nearby-list li,
+    .agent-list li {
+      border-bottom: 1px dashed rgba(100, 89, 72, 0.25);
+      padding-bottom: 0.45rem;
+      color: var(--text-soft);
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 0.8rem 0.9rem;
+      background: var(--surface);
+    }
+
+    details + details {
+      margin-top: 0.7rem;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: #29352d;
+    }
+
+    details p {
+      margin: 0.65rem 0 0;
+      color: var(--text-soft);
+    }
+
+    form {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .field-row {
+      display: grid;
+      gap: 0.7rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    label {
+      font-size: 0.83rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      color: #32443a;
+      display: grid;
+      gap: 0.35rem;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid #cdbda7;
+      border-radius: 9px;
+      background: #fdfbf6;
+      padding: 0.72rem;
+      font: inherit;
+      color: #252521;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-note {
+      margin-top: 0.5rem;
+      color: var(--text-soft);
+      font-size: 0.86rem;
+    }
+
+    .site-footer {
+      margin-top: 2.5rem;
+      background: #212c26;
+      color: #f0ece3;
+      padding: 2.2rem 0 2.8rem;
+    }
+
+    .footer-grid {
+      width: var(--container);
+      margin: 0 auto;
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: 1.1fr 0.7fr 1fr;
+    }
+
+    .site-footer h3 {
+      margin: 0 0 0.45rem;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.55rem;
+      line-height: 1;
+    }
+
+    .site-footer p,
+    .site-footer li,
+    .site-footer a {
+      color: rgba(240, 236, 227, 0.87);
+      margin: 0;
+      font-size: 0.92rem;
+    }
+
+    .disclaimer {
+      margin-top: 0.9rem;
+      font-size: 0.82rem;
+      color: rgba(240, 236, 227, 0.75);
+    }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(7, 11, 9, 0.83);
+      z-index: 80;
+      display: none;
+      place-items: center;
+      padding: 1rem;
+    }
+
+    .lightbox img {
+      max-width: min(92vw, 1100px);
+      max-height: 90vh;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(220, 207, 185, 0.55);
+    }
+
+    .lightbox button {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      border: none;
+      border-radius: 999px;
+      width: 42px;
+      height: 42px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      background: #ede4d6;
+      color: #2e3b33;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1024px) {
+      .top-nav {
+        gap: 0.65rem;
+        font-size: 0.88rem;
+      }
+
+      .strength-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .tract-item {
+        grid-template-columns: 1fr 0.6fr 0.6fr 1.3fr auto;
+      }
+
+      .facts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 820px) {
+      .site-header .container {
+        flex-wrap: wrap;
+        padding: 0.75rem 0;
+      }
+
+      .nav-toggle {
+        display: inline-block;
+        margin-left: auto;
+      }
+
+      .top-nav {
+        width: 100%;
+        display: none;
+        flex-wrap: wrap;
+        gap: 0.7rem 1rem;
+        padding-top: 0.65rem;
+      }
+
+      .top-nav.open {
+        display: flex;
+      }
+
+      .hero-inner {
+        padding-top: 4.5rem;
+      }
+
+      .quick-facts {
+        grid-template-columns: 1fr;
+      }
+
+      .story-grid,
+      .location-grid,
+      .agent-grid,
+      .contact-grid,
+      .map-layout,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tract-item {
+        grid-template-columns: 1fr;
+        align-items: start;
+      }
+
+      .tract-item .btn {
+        width: fit-content;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 150px;
+      }
+
+      .gallery-large,
+      .gallery-tall,
+      .gallery-small {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+
+      .field-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container">
+      <div class="brand" aria-label="Big Sandy Ranchettes brand">
+        <span class="brand-title">Big Sandy Ranchettes</span>
+        <span class="brand-sub">Private acreage homesites in Polk County, Texas</span>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" id="navToggle">☰</button>
+      <nav class="top-nav" id="topNav" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#tracts">Available Tracts</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#location">Location</a>
+        <a href="#realtor">Realtor Info</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary" href="#contact">Schedule a Tour</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <span class="kicker">Polk County Land Opportunity</span>
+        <h1 id="hero-title">Private wooded acreage in Polk County, Texas</h1>
+        <p>
+          Big Sandy Ranchettes is a single-community land release designed for buyers who want room, privacy,
+          and practical homesite potential in East Texas. Whether you are planning a full-time home, a weekend
+          place, or a long-term family tract, this is land you can shape around your goals.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#tracts">View Available Tracts</a>
+          <a class="btn btn-outline" href="#realtor">Realtor Information</a>
+        </div>
+        <div class="quick-facts" aria-label="Quick property facts">
+          <span>Polk County, TX</span>
+          <span>Wooded acreage tracts</span>
+          <span>Private rural setting</span>
+          <span>Local realtor friendly</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="overview">
+      <div class="container story-grid">
+        <article class="story-copy">
+          <span class="kicker">Community Story</span>
+          <h2>A place built around privacy, land, and practical freedom</h2>
+          <p>
+            Big Sandy Ranchettes is not a high-density subdivision and not a broad, one-size-fits-all master plan.
+            It is a focused acreage community where each tract has room to breathe and room to evolve.
+          </p>
+          <p>
+            The character of the land is rooted in East Texas: wooded terrain, quiet surroundings, and a pace that
+            feels settled. Buyers can preserve the natural tree cover they want, selectively clear where needed, and
+            shape a property that serves everyday living, recreation, or future legacy plans.
+          </p>
+          <p>
+            This is designed for people who value real ground under their feet, not just square footage on paper.
+            Homesite potential, practical access, and long-view ownership all come together in one property identity.
+          </p>
+        </article>
+        <aside class="story-image-wrap">
+          <!-- Replace image source with verified property storytelling image -->
+          <img src="images/story-wooded-overview.jpg" alt="[Customize alt text: overview of wooded tract landscape]" loading="lazy" />
+        </aside>
+      </div>
+    </section>
+
+    <section class="section reveal" id="strengths">
+      <div class="container">
+        <span class="kicker">Why Big Sandy Ranchettes</span>
+        <h2>Grounded advantages for buyers and agents</h2>
+        <p class="lead">
+          Every tract is part of one clear vision: usable wooded acreage in a peaceful setting, with a straightforward
+          process that works for both direct buyers and local co-brokers.
+        </p>
+
+        <div class="strength-grid">
+          <article class="strength-card">
+            <h3>Wooded, private tracts</h3>
+            <p>Natural cover and spacing between homesites create a quiet, more private feel across the community.</p>
+          </article>
+          <article class="strength-card">
+            <h3>Build-ready potential</h3>
+            <p>Each tract is presented with homesite intent in mind, while allowing owners to plan according to their priorities.</p>
+          </article>
+          <article class="strength-card">
+            <h3>Peaceful East Texas setting</h3>
+            <p>Polk County offers practical access to town needs while preserving a slower, land-first environment.</p>
+          </article>
+          <article class="strength-card">
+            <h3>Flexible land use character</h3>
+            <p>Space for homestead plans, weekend use, family recreation, and long-term hold strategies.</p>
+          </article>
+          <article class="strength-card">
+            <h3>Useful acreage footprint</h3>
+            <p>Tracts are shaped to provide meaningful ground, not just narrow parcel lines with limited use.</p>
+          </article>
+          <article class="strength-card">
+            <h3>Realtor-friendly process</h3>
+            <p>Clear showing structure and agent communication designed for efficient local brokerage participation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="tracts">
+      <div class="container">
+        <span class="kicker">Available Tracts</span>
+        <h2>Current tract lineup at Big Sandy Ranchettes</h2>
+        <p class="lead">
+          Review tract highlights below, then request the current price sheet for full details.
+          Tract inventory is updated regularly as reservations and closings progress.
+        </p>
+
+        <div class="tract-list" aria-label="Available tract list">
+          <!-- Duplicate this .tract-item block to add more tracts -->
+          <article class="tract-item">
+            <h3>Tract 1</h3>
+            <div class="tract-meta">[Insert tract acreage]</div>
+            <span class="status available">Available</span>
+            <p class="tract-meta">Wooded interior tract with room for homesite placement and privacy buffers.</p>
+            <a class="btn btn-outline" href="#contact">Request Details</a>
+          </article>
+
+          <article class="tract-item">
+            <h3>Tract 2</h3>
+            <div class="tract-meta">[Insert tract acreage]</div>
+            <span class="status pending">Pending</span>
+            <p class="tract-meta">Balanced terrain with mixed tree cover and practical layout potential.</p>
+            <a class="btn btn-outline" href="#contact">Join Backup List</a>
+          </article>
+
+          <article class="tract-item">
+            <h3>Tract 3</h3>
+            <div class="tract-meta">[Insert tract acreage]</div>
+            <span class="status available">Available</span>
+            <p class="tract-meta">Quiet tract with wooded perimeter, suitable for homestead or weekend retreat plans.</p>
+            <a class="btn btn-outline" href="#contact">Request Details</a>
+          </article>
+
+          <article class="tract-item">
+            <h3>Tract 4</h3>
+            <div class="tract-meta">[Insert tract acreage]</div>
+            <span class="status sold">Sold</span>
+            <p class="tract-meta">Closed tract shown for community context and status transparency.</p>
+            <a class="btn btn-outline" href="#contact">Ask About Similar</a>
+          </article>
+          <!-- End tract-item duplicate block -->
+        </div>
+
+        <p class="tracts-note">Pricing, terms, and availability are subject to change without notice.</p>
+        <a class="btn btn-primary" href="#contact">Request Current Price Sheet</a>
+      </div>
+    </section>
+
+    <section class="section reveal" id="land-plan">
+      <div class="container">
+        <span class="kicker">Tract Map &amp; Land Plan</span>
+        <h2>Understand layout, access, and tract character before your tour</h2>
+
+        <div class="map-layout">
+          <div class="map-panel">
+            <!-- Replace with actual tract map, plat, or aerial panel -->
+            <img src="images/tract-map-placeholder.jpg" alt="[Customize alt text: Big Sandy Ranchettes tract map or plat image]" loading="lazy" />
+          </div>
+
+          <div class="map-callouts">
+            <article class="callout">
+              <h3>Tract Layout</h3>
+              <p>Review lot orientation and boundaries to compare wooded depth, frontage, and homesite options.</p>
+            </article>
+            <article class="callout">
+              <h3>Access</h3>
+              <p>Use this panel to confirm road approach and entry points before scheduling an on-site showing.</p>
+            </article>
+            <article class="callout">
+              <h3>Usable Ground</h3>
+              <p>Map context helps buyers visualize selective clearing strategy and retained tree coverage.</p>
+            </article>
+            <article class="callout">
+              <h3>Property Character</h3>
+              <p>Pair this plan with gallery photos to understand terrain feel and tract personality on the ground.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="gallery">
+      <div class="container">
+        <span class="kicker">Property Gallery</span>
+        <h2>Real imagery from Big Sandy Ranchettes</h2>
+        <p class="lead">
+          Replace each image with your current property media. Click any image to enlarge.
+        </p>
+
+        <div class="gallery-grid" aria-label="Property image gallery">
+          <figure class="gallery-item gallery-large">
+            <img src="images/gallery-aerial-01.jpg" alt="[Customize alt text: aerial views over Big Sandy Ranchettes]" loading="lazy" />
+            <figcaption>Aerial Views</figcaption>
+          </figure>
+          <figure class="gallery-item gallery-tall">
+            <img src="images/gallery-wooded-01.jpg" alt="[Customize alt text: wooded terrain and tree cover]" loading="lazy" />
+            <figcaption>Wooded Terrain</figcaption>
+          </figure>
+          <figure class="gallery-item gallery-small">
+            <img src="images/gallery-trail-01.jpg" alt="[Customize alt text: access road or trail area]" loading="lazy" />
+            <figcaption>Access / Trails</figcaption>
+          </figure>
+          <figure class="gallery-item gallery-small">
+            <img src="images/gallery-homesite-01.jpg" alt="[Customize alt text: homesite potential clearing area]" loading="lazy" />
+            <figcaption>Homesite Potential</figcaption>
+          </figure>
+          <figure class="gallery-item gallery-small">
+            <img src="images/gallery-detail-01.jpg" alt="[Customize alt text: property lifestyle detail image]" loading="lazy" />
+            <figcaption>On-Property Detail</figcaption>
+          </figure>
+          <figure class="gallery-item gallery-small">
+            <img src="images/gallery-wooded-02.jpg" alt="[Customize alt text: additional wooded tract image]" loading="lazy" />
+            <figcaption>Woodline Character</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="facts">
+      <div class="container">
+        <span class="kicker">Land Facts</span>
+        <h2>Property details for practical buyer review</h2>
+        <p class="lead">
+          Use this section for verified development and listing details.
+          <!-- Replace all bracketed placeholders below with verified development facts -->
+        </p>
+
+        <dl class="facts-grid">
+          <div class="fact"><dt>County</dt><dd>Polk County</dd></div>
+          <div class="fact"><dt>State</dt><dd>Texas</dd></div>
+          <div class="fact"><dt>Property Type</dt><dd>Wooded acreage homesites / ranchette tracts</dd></div>
+          <div class="fact"><dt>Utilities</dt><dd>[Insert verified utility information]</dd></div>
+          <div class="fact"><dt>Road / Access</dt><dd>[Insert verified road frontage and access notes]</dd></div>
+          <div class="fact"><dt>Restrictions</dt><dd>[Insert deed restriction and use guidance]</dd></div>
+          <div class="fact"><dt>School District</dt><dd>[Insert verified district information if applicable]</dd></div>
+          <div class="fact"><dt>Survey / Plat</dt><dd>[Insert survey and plat availability details]</dd></div>
+          <div class="fact"><dt>Buyer Verification</dt><dd>All buyers should independently verify utilities, restrictions, and intended use before purchase.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section reveal" id="location">
+      <div class="container location-grid">
+        <article class="location-copy">
+          <span class="kicker">Location</span>
+          <h2>East Texas setting with practical reach to daily needs</h2>
+          <p>
+            Big Sandy Ranchettes is positioned in Polk County for buyers who want rural privacy without feeling isolated.
+            Use the map panel to place the property in context with Livingston and surrounding East Texas destinations.
+          </p>
+          <p>
+            Final driving times and route details should be confirmed with your listing contact once tract selection begins.
+          </p>
+          <h3>Nearby</h3>
+          <ul class="nearby-list">
+            <li>Livingston area amenities: [Insert approximate travel time]</li>
+            <li>Lake and recreation access: [Insert nearby recreation note]</li>
+            <li>Regional highway connections: [Insert route details]</li>
+            <li>Everyday services and supplies: [Insert local service references]</li>
+          </ul>
+        </article>
+
+        <aside class="location-map">
+          <!-- Replace with Google Maps iframe or static map image -->
+          <img src="images/location-map-placeholder.jpg" alt="[Customize alt text: map showing Big Sandy Ranchettes location in Polk County, Texas]" loading="lazy" />
+          <p class="tracts-note">[Insert verified map pin address or nearest waypoint]</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section reveal" id="realtor">
+      <div class="container agent-grid">
+        <article class="agent-copy">
+          <span class="kicker">Realtor Information</span>
+          <h2>Local co-brokers are welcome</h2>
+          <p>
+            Big Sandy Ranchettes is marketed to direct buyers and through local real estate professionals.
+            We value clear communication and smooth coordination from first inquiry through closing.
+          </p>
+          <ul class="agent-list">
+            <li>Co-broker participation is welcomed with advance showing coordination.</li>
+            <li>Agents should register buyers before or at first substantial contact.</li>
+            <li>For commission eligibility, buyer representation should remain active through contract and closing.</li>
+            <li>Showing windows, gate/access instructions, and field guidance are provided through listing contacts.</li>
+            <li>Digital flyer, brochure, and tract updates are available for active agents.</li>
+          </ul>
+          <a class="btn btn-primary" href="#contact">Request Agent Packet</a>
+        </article>
+
+        <aside class="agent-panel">
+          <h3>Agent Resources</h3>
+          <p>[Insert showing contact details]</p>
+          <p>[Insert brokerage contact / listing office]</p>
+          <p>[Insert flyer download link]</p>
+          <p>[Insert brochure or media kit link]</p>
+          <p class="tracts-note">Guidelines and cooperation terms should be confirmed with the listing broker.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section reveal" id="faqs">
+      <div class="container">
+        <span class="kicker">FAQs</span>
+        <h2>Common questions from acreage buyers</h2>
+
+        <details>
+          <summary>Are tracts available now?</summary>
+          <p>
+            Availability changes as tracts are reserved and sold. Use the contact form to request the current status sheet.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I schedule a property tour?</summary>
+          <p>
+            Yes. Tours are by appointment so you can review specific tracts with current access instructions.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can my realtor represent me?</summary>
+          <p>
+            Yes. Buyer representation by a licensed agent is welcomed. Ask your agent to register with listing contacts early.
+          </p>
+        </details>
+
+        <details>
+          <summary>Are utilities available?</summary>
+          <p>
+            Utility options vary by tract and should be confirmed with verified development information for your selected lot.
+          </p>
+        </details>
+
+        <details>
+          <summary>Are the tracts wooded?</summary>
+          <p>
+            The project is intentionally wooded in character. Tree density and clearing potential can vary tract to tract.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I build a home on the property?</summary>
+          <p>
+            Homesite intent is part of the community plan. Buyers should verify tract-specific restrictions and building guidelines.
+          </p>
+        </details>
+
+        <details>
+          <summary>Will I need a well and septic system?</summary>
+          <p>
+            Requirements may differ by tract and utility availability. Confirm all infrastructure expectations before contract.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is financing available?</summary>
+          <p>
+            Financing options may be available through third-party lenders. Terms depend on lender criteria and buyer profile.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I reserve a tract?</summary>
+          <p>
+            Contact the listing team to review current terms, reservation steps, and required documentation.
+          </p>
+        </details>
+
+        <details>
+          <summary>What should buyers verify before purchase?</summary>
+          <p>
+            Buyers should independently verify utilities, access, survey boundaries, restrictions, taxes, and intended-use compatibility.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contact">
+      <div class="container contact-grid">
+        <article>
+          <span class="kicker">Contact</span>
+          <h2>Request availability or schedule a tour</h2>
+          <p class="lead">
+            Send your inquiry and we will follow up with current tract availability, showing details, and realtor packet information.
+          </p>
+          <ul class="agent-list">
+            <li>Request availability</li>
+            <li>Schedule a property tour</li>
+            <li>Get the realtor packet</li>
+          </ul>
+        </article>
+
+        <aside class="form-panel">
+          <!-- Static form: replace action with Formspree or your preferred handler -->
+          <form action="[Insert form endpoint]" method="POST">
+            <div class="field-row">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your full name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                Phone
+                <input type="tel" name="phone" placeholder="(000) 000-0000" />
+              </label>
+              <label>
+                I am a
+                <select name="role" required>
+                  <option value="">Select one</option>
+                  <option>Buyer</option>
+                  <option>Realtor</option>
+                  <option>Investor</option>
+                  <option>Neighbor</option>
+                  <option>Other</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                Interested tract
+                <input type="text" name="interested_tract" placeholder="Tract # or type" />
+              </label>
+              <label>
+                Preferred timeline
+                <input type="text" name="timeline" placeholder="Example: 30-90 days" />
+              </label>
+            </div>
+
+            <label>
+              Message
+              <textarea name="message" placeholder="Tell us what you are looking for, and whether you need buyer or agent details." required></textarea>
+            </label>
+
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+            <p class="form-note">By submitting, you agree to be contacted about Big Sandy Ranchettes.</p>
+          </form>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <section>
+        <h3>Big Sandy Ranchettes</h3>
+        <p>Polk County, Texas</p>
+        <p>[Insert showing phone]</p>
+        <p>[Insert inquiry email]</p>
+        <p class="disclaimer">
+          Information is deemed reliable but not guaranteed. Pricing, acreage, restrictions, utility details,
+          and availability should be independently verified by buyers and agents.
+        </p>
+      </section>
+
+      <section>
+        <h3>Explore</h3>
+        <ul class="footer-links">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#tracts">Available Tracts</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Brokerage Notes</h3>
+        <p>[Insert brokerage and licensing details]</p>
+        <p>[Insert Equal Housing Opportunity / fair housing statement]</p>
+        <p>[Optional: Acreage Developments branding line]</p>
+      </section>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button type="button" id="lightboxClose" aria-label="Close image viewer">×</button>
+    <img src="" alt="Expanded property image" id="lightboxImage" />
+  </div>
+
+  <script>
+    const navToggle = document.getElementById("navToggle");
+    const topNav = document.getElementById("topNav");
+
+    navToggle.addEventListener("click", () => {
+      topNav.classList.toggle("open");
+    });
+
+    document.querySelectorAll(".top-nav a").forEach((link) => {
+      link.addEventListener("click", () => topNav.classList.remove("open"));
+    });
+
+    // Simple lightbox for gallery images.
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxClose = document.getElementById("lightboxClose");
+
+    document.querySelectorAll(".gallery-item img").forEach((img) => {
+      img.addEventListener("click", () => {
+        lightboxImage.src = img.src;
+        lightboxImage.alt = img.alt;
+        lightbox.style.display = "grid";
+        lightbox.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    const closeLightbox = () => {
+      lightbox.style.display = "none";
+      lightbox.setAttribute("aria-hidden", "true");
+      lightboxImage.src = "";
+    };
+
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeLightbox();
+    });
+
+    // Subtle reveal animation for section blocks.
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    document.querySelectorAll(".reveal").forEach((section) => observer.observe(section));
+  </script>
+</body>
+</html>

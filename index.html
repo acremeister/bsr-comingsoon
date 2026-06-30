@@ -75,9 +75,9 @@
       line-height: 1.05;
       margin: 0;
     }
-    h1 { font-size: clamp(2.8rem, 7.5vw, 5rem); font-weight: 600; }
-    h2 { font-size: clamp(2rem, 4.5vw, 3.1rem); font-weight: 600; margin-bottom: 0.8rem; }
-    h3 { font-size: 1.55rem; font-weight: 600; }
+    h1 { font-size: 5rem; line-height: 84px; letter-spacing: 0.96px; font-weight: 600; }
+    h2 { font-size: 3.1rem; line-height: 52px; font-weight: 600; margin-bottom: 0.8rem; }
+    h3 { font-size: 1.25rem; font-weight: 600; }
 
     .kicker {
       display: inline-block;
@@ -302,9 +302,9 @@
     }
     .hero h1 {
       max-width: 14ch;
-      font-size: clamp(3rem, 7vw, 80px);
-      line-height: 1.05;
-      letter-spacing: 0.012em;
+      font-size: 5rem;
+      line-height: 84px;
+      letter-spacing: 0.96px;
       margin-bottom: 1.2rem;
     }
     .hero-desc {
@@ -887,6 +887,40 @@
       section[id] { scroll-margin-top: 94px; }
       .hero-inner { padding: 5rem 0 2.5rem; }
       .hero-badge { width: 156px; height: 156px; }
+    }
+
+    @media (max-width: 1200px) {
+      .hero h1 { font-size: 4.5rem; line-height: 76px; }
+      h2 { font-size: 2.85rem; line-height: 48px; }
+    }
+
+    @media (max-width: 992px) {
+      .section { padding: 5rem 0; }
+      .hero h1 { font-size: 4rem; line-height: 68px; }
+      h2 { font-size: 2.45rem; line-height: 42px; }
+      .hero-desc { font-size: 1.02rem; }
+    }
+
+    @media (max-width: 768px) {
+      .section { padding: 4.5rem 0; }
+      section[id] { scroll-margin-top: 98px; }
+      .hero-inner { padding: 5.3rem 0 2.8rem; }
+      .hero h1 { font-size: 3.4rem; line-height: 58px; }
+      h2 { font-size: 2.1rem; line-height: 36px; }
+    }
+
+    @media (max-width: 412px) {
+      body { font-size: 16px; line-height: 1.64; }
+      .hero h1 { font-size: 2.8rem; line-height: 48px; }
+      h2 { font-size: 1.9rem; line-height: 33px; }
+      .hero-desc { font-size: 0.98rem; }
+      .hero-actions { gap: 0.65rem; }
+    }
+
+    @media (max-width: 375px) {
+      .hero h1 { font-size: 2.55rem; line-height: 44px; }
+      h2 { font-size: 1.75rem; line-height: 31px; }
+      .hero-actions .btn { width: 100%; justify-content: center; }
     }
   </style>
 </head>

@@ -12,6 +12,7 @@
   <meta property="og:locale" content="en_US" />
   <link rel="icon" type="image/png" href="images/bigsandy.png" />
   <link rel="apple-touch-icon" href="images/bigsandy.png" />
+  <script async defer id="hs-script-loader" src="https://js.hs-scripts.com/45572482.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,7 +52,10 @@
       line-height: 1.6;
       color: var(--body);
       background: var(--ivory);
+      overflow-x: hidden;
     }
+
+    section[id] { scroll-margin-top: 106px; }
 
     img { max-width: 100%; display: block; }
     a   { color: inherit; text-decoration: none; }
@@ -379,7 +383,19 @@
       transition: transform 0.25s, box-shadow 0.25s;
     }
     .feature-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-    .feature-icon { font-size: 1.5rem; display: block; margin-bottom: 0.65rem; }
+    .feature-icon {
+      width: 2.35rem;
+      height: 2.35rem;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.65rem;
+      font-size: 1.2rem;
+      background: linear-gradient(135deg, rgba(196,160,88,0.22), rgba(196,160,88,0.08));
+      border: 1px solid rgba(196,160,88,0.42);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.35);
+    }
     .feature-card h3 { font-size: 1.28rem; margin-bottom: 0.5rem; }
     .feature-card p { color: var(--muted); font-size: 0.92rem; line-height: 1.65; }
 
@@ -588,6 +604,7 @@
       gap: 0.9rem;
       margin-top: 1.5rem;
     }
+    .facts-grid-land { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .fact {
       border: 1px solid var(--line);
       border-radius: var(--radius);
@@ -822,6 +839,7 @@
     @media (max-width: 1080px) {
       .feature-grid { grid-template-columns: repeat(2, 1fr); }
       .facts-grid   { grid-template-columns: repeat(2, 1fr); }
+      .facts-grid-land { grid-template-columns: repeat(2, 1fr); }
       .footer-grid  { grid-template-columns: 1fr; }
       .footer-grid > :first-child { grid-column: span 1; }
     }
@@ -850,6 +868,10 @@
       .field-row  { grid-template-columns: 1fr; }
       .feature-grid { grid-template-columns: 1fr; }
       .facts-grid   { grid-template-columns: 1fr; }
+      .facts-grid-land { grid-template-columns: 1fr; }
+      section[id] { scroll-margin-top: 94px; }
+      .hero-inner { padding: 5rem 0 2.5rem; }
+      .hero-badge { width: 186px; height: 186px; }
     }
   </style>
 </head>
@@ -962,14 +984,20 @@
           <div id="hubspot-interest-form"></div>
           <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
           <script>
-            if (window.hbspt) {
-              window.hbspt.forms.create({
-                region: "na1",
+            (function initHubSpotForm(retries) {
+              if (window.hbspt && window.hbspt.forms) {
+                window.hbspt.forms.create({
+                  region: "na1",
                   portalId: "45572482",
                   formId: "692a3b24-8e10-414d-afaf-c33c49192f98",
-                target: "#hubspot-interest-form"
-              });
-            }
+                  target: "#hubspot-interest-form"
+                });
+                return;
+              }
+              if (retries < 30) {
+                setTimeout(function retryInit() { initHubSpotForm(retries + 1); }, 150);
+              }
+            })(0);
           </script>
           <p class="form-note">This form is for coming soon lot interest list signups.</p>
         </aside>
@@ -1075,7 +1103,7 @@
         <h2>Verified property details</h2>
         <p class="lead">Confirmed facts for buyer and agent review. Always independently verify intended use, utilities, and restrictions before purchase.</p>
 
-        <dl class="facts-grid">
+        <dl class="facts-grid facts-grid-land">
           <div class="fact"><dt>County</dt><dd>Polk County</dd></div>
           <div class="fact"><dt>State</dt><dd>Texas</dd></div>
           <div class="fact"><dt>Property Type</dt><dd>Acreage Ranchette Tracts</dd></div>
@@ -1120,13 +1148,13 @@
         <aside>
           <div class="map-embed">
             <iframe
-              src="https://maps.google.com/maps?q=Dallardsville,+TX+77351&t=&z=11&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=Benny+Griffin+Road,+Dallardsville,+TX+77351&t=&z=13&ie=UTF8&iwloc=&output=embed"
               title="Big Sandy Ranchettes area map"
               allowfullscreen
               loading="lazy"
             ></iframe>
           </div>
-          <p class="map-caption">Near Benny Griffin Road &bull; Dallardsville, TX 77351 &bull; Polk County</p>
+          <p class="map-caption">Reference point near Benny Griffin Road &bull; Dallardsville, TX 77351 &bull; Polk County</p>
         </aside>
       </div>
     </section>
@@ -1194,7 +1222,7 @@
           </details>
           <details>
             <summary>Is there internet service?</summary>
-            <p>Yes — fiber optic internet is available on every lot. This is a significant and rare advantage for buyers who plan to work remotely, stream, or manage farm and ranch systems from the property.</p>
+            <p>Fiber optic service is available along Benny Griffin Road. Buyers should verify final provider availability and service extension options for their selected tract.</p>
           </details>
           <details>
             <summary>Is any of the land in a floodplain?</summary>
